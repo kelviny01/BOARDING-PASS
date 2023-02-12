@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(130, 87, 229, 100%), #633bbc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  width: 327px;
+  height: 656px;
+  user-select: none;
+}
+
+#content > h2,
+p {
+  text-align: center;
+  margin: 1em;
+}
+
+#content > h2 {
+  color: #fff;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+
+#content p {
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+.card__infos:nth-of-type(1) {
+  width: 100%;
+  height: 190px;
+  background-color: #fff;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  mask: radial-gradient(circle 12px at bottom left, rgba(0, 0, 0, 0) 98%, #000)
+      bottom left,
+    radial-gradient(circle 12px at bottom right, rgba(0, 0, 0, 0) 98%, #000)
+      bottom right;
+  mask-repeat: no-repeat;
+  mask-size: 51%;
+  -webkit-mask: radial-gradient(
+        circle 12px at bottom left,
+        rgba(0, 0, 0, 0) 98%,
+        #000
+      )
+      bottom left,
+    radial-gradient(circle 12px at bottom right, rgba(0, 0, 0, 0) 98%, #000)
+      bottom right;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 51%;
+  border-bottom: 1px dashed #555;
+  padding: 1.5rem;
+}
+
+.card__one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.card__one strong {
+  display: block;
+}
+
+.card__one span {
+  font-size: 14px;
+  color: #00000074;
+}
+
+.card__one .starting__point strong,
+.destiny strong {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.card__one .starting__point {
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+.card__one .destiny {
+  padding-top: 0.5rem;
+}
+
+.icon-airplane {
+  position: absolute;
+  top: 45%;
+  left: 85%;
+}
+
+.card__one .destiny strong,
+span {
+  text-align: right;
+}
+
+.destiny span {
+  display: block;
+}
+
+.card__two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card__two span,
+strong {
+  display: block;
+  font-weight: normal;
+}
+
+.card__two span {
+  color: #00000074;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.card__two .passenger {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card__two .seat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card__three {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.card__three * span {
+  color: #00000074;
+}
+
+.infos-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.qrcode-img {
+  text-align: center;
+}
+
+.qrcode-img span {
+  display: block;
+  font-size: 14px;
+}
+
+.text-warning {
+  text-align: center;
+  transform: translateY(-2rem);
+  display: block;
+}
+
+.text-warning span {
+  color: #00000074;
+}
+
+.card__infos:nth-of-type(2) {
+  width: 100%;
+  height: 85px;
+  background-color: #fff;
+  mask: radial-gradient(circle 12px at top left, rgba(0, 0, 0, 0) 98%, #000) top
+      left,
+    radial-gradient(circle 12px at top right, rgba(0, 0, 0, 0) 98%, #000) top
+      right,
+    radial-gradient(circle 12px at bottom left, rgba(0, 0, 0, 0) 98%, #000)
+      bottom left,
+    radial-gradient(circle 12px at bottom right, rgba(0, 0, 0, 0) 98%, #000)
+      bottom right;
+  mask-repeat: no-repeat;
+  mask-size: 51% 51%;
+  -webkit-mask: radial-gradient(
+        circle 12px at top left,
+        rgba(0, 0, 0, 0) 98%,
+        #000
+      )
+      top left,
+    radial-gradient(circle 12px at top right, rgba(0, 0, 0, 0) 98%, #000) top
+      right,
+    radial-gradient(circle 12px at bottom left, rgba(0, 0, 0, 0) 98%, #000)
+      bottom left,
+    radial-gradient(circle 12px at bottom right, rgba(0, 0, 0, 0) 98%, #000)
+      bottom right;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 51% 51%;
+}
+
+.card__infos:nth-child(3) {
+  width: 100%;
+  height: 270px;
+  background-color: #fff;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  mask: radial-gradient(circle 12px at top left, rgba(0, 0, 0, 0) 98%, #000) top
+      left,
+    radial-gradient(circle 12px at top right, rgba(0, 0, 0, 0) 98%, #000) top
+      right;
+  mask-repeat: no-repeat;
+  mask-size: 51%;
+  -webkit-mask: radial-gradient(
+        circle 12px at top left,
+        rgba(0, 0, 0, 0) 98%,
+        #000
+      )
+      top left,
+    radial-gradient(circle 12px at top right, rgba(0, 0, 0, 0) 98%, #000) top
+      right;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 51%;
+  border-top: 1px dashed #555;
+}
+
+@media (max-width: 62.5rem) {
+}
