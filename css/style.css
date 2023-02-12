@@ -161,6 +161,13 @@ strong {
   gap: 0.5rem;
 }
 
+.infos-card .hours {
+  background-color: #633BBC;
+  color: #fff;
+  padding: 8px 13px;
+  border-radius: 30px;
+}
+
 .qrcode-img {
   text-align: center;
 }
@@ -233,7 +240,4 @@ strong {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 51%;
   border-top: 1px dashed #555;
-}
-
-@media (max-width: 62.5rem) {
 }
